@@ -295,6 +295,7 @@ class Potential:
             """
             body function to vmap over
             """
+            print(ws_jax[i,:3], ws_jax[i,3:], Msat[i], i, ts[i], seed_num, kval_arr)
             pos_close_new, pos_far_new, vel_close_new, vel_far_new = self.release_model(x=ws_jax[i,:3], v=ws_jax[i,3:], Msat=Msat[i], i=i, t=ts[i], seed_num=seed_num, kval_arr=kval_arr)
             return [pos_close_new, pos_far_new, vel_close_new, vel_far_new]
         

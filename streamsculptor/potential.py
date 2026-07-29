@@ -19,7 +19,8 @@ from jax.scipy import special
 usys = UnitSystem(u.kpc, u.Myr, u.Msun, u.radian)
 from quadax import quadgk
 
-from streamsculptor import Potential
+#from streamsculptor import Potential
+from .main import Potential
 #from .InterpAGAMA import AGAMA_Spheroid
 import interpax
 from jax.scipy.interpolate import RegularGridInterpolator
